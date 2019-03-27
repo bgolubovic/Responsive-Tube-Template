@@ -3436,11 +3436,6 @@ h2 {
   margin: 0 3px;
   padding: 10px 15px;
 }
-@media (max-width: 510px) {
-  .pagination > li > a {
-    display: none;
-  }
-}
 .pagination > li > a .fa-chevron-left {
   margin-right: 10px;
 }
@@ -3457,28 +3452,8 @@ h2 {
   border-radius: 0;
 }
 @media (max-width: 510px) {
-  .pagination > li > a.prev, .pagination > li > a.next {
-    display: block;
-    width: 50%;
-    margin: 0;
-  }
-}
-.pagination > li > a.prev:hover, .pagination > li > a.next:hover {
-  background: #f2f2f2;
-}
-.pagination > li > a.dots {
-  padding: 10px;
-  background: transparent;
-  border: transparent;
-  color: #767677;
-}
-.pagination > li > a.dots:hover {
-  background: transparent;
-}
-@media (max-width: 510px) {
-  .pagination {
-    display: none;
-  }
+  .pagination > li {display: none}
+  .pagination > li:first-child,.pagination > li:last-child {display: inline}
 }
 
 a .fa-chevron-down {
